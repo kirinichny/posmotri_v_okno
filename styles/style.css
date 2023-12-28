@@ -62,7 +62,7 @@ ol {
   font-size: inherit;
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-color: transparent;
   cursor: pointer;
 }
@@ -81,15 +81,15 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline: 1px solid currentColor;
+  outline-offset: -2px;
 }
 
 .content {
   display: flex;
   align-items: flex-end;
   gap: 0 30px;
-  min-width: 1140px;
+  inline-size: 1140px;
 }
 
 .result {
@@ -136,7 +136,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 2px;
 }
 
@@ -149,7 +149,7 @@ ol {
   width: 100%;
   border-width: 1px 0;
   border-style: solid;
-  border-color: #fff;
+  border-color: currentColor;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -166,7 +166,7 @@ ol {
   padding: 1px;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
@@ -269,4 +269,5 @@ ol {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
